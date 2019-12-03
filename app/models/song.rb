@@ -3,7 +3,7 @@ class Song < ActiveRecord::Base
 
   def song_count
     @artist = Artist.find(params[:id])
-    @artist.songs.count 
+    @artist.songs.count
   end
 
 end
